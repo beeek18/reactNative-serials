@@ -1,7 +1,8 @@
-import axios from 'axios';
-import { StatusBar } from 'expo-status-bar';
 import React from 'react'
 import { View, Alert, ScrollView } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import axios from 'axios';
+
 import styled from 'styled-components/native'
 import { Loading } from '../components/Loading';
 
@@ -30,12 +31,12 @@ export const FullPostScreen = ({ route, navigation }) => {
 
     setIsLoading(true)
     axios
-      .get('https://63e3df4dc919fe386c110c1d.mockapi.io/serials/' + id)
+      .get('https://63e7ae4fac3920ad5be1e468.mockapi.io/serials' + id)
       .then(({ data }) => {
         setData(data)
       })
       .catch((err) => {
-        console.log(err)
+        console.warn(err)
         Alert.alert('ERROR', 'ERROR TO GET POST')
       })
       .finally(() => { setIsLoading(false) })

@@ -1,6 +1,6 @@
-import axios from 'axios';
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
+import axios from 'axios';
 
 import {
   Alert,
@@ -22,7 +22,7 @@ export const HomeScreen = ({ navigation }) => {
     setIsLoading(true)
 
     axios
-      .get('https://63e3df4dc919fe386c110c1d.mockapi.io/serials')
+      .get('https://63e7ae4fac3920ad5be1e468.mockapi.io/serials')
       .then(({ data }) => {
         setItems(data)
       })
@@ -50,7 +50,9 @@ export const HomeScreen = ({ navigation }) => {
         />}
 
         data={items}
+
         renderItem={({ item }) => (
+
           <TouchableOpacity onPress={() => navigation.navigate('FullPost', { id: item.id, title: item.title })}>
             <Post
               key={item.id}
@@ -62,6 +64,7 @@ export const HomeScreen = ({ navigation }) => {
 
         )}
       />
+
       <StatusBar style="auto" />
     </View>
   );

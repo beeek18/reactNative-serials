@@ -1,4 +1,4 @@
-<h1>Serials 🎬
+<h1>About Serials 🎬
 
 <h4>
 <li>Be able to work with HTTP requests (axios/fetch)

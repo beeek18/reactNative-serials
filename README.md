@@ -1,9 +1,9 @@
-<h1>About Serials 🎬
+<h1>About Serials  🎬
 
 <h4>
 <li>Be able to work with HTTP requests (axios/fetch)
 <li>useState, useEffect, JSX, Props
-<li>Create a mobile app for Android / iOS
+<li>Create a mobile app for Android / IOS
 <li>Run the application on a real device (Expo Go)
 <li>Work with React Native
 <li>Routing for mobile applications
